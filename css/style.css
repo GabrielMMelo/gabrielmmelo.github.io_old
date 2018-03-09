@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.imaged{
+	position: absolute;
+	bottom:5px;
+	
+}
+
+.bg_green{
+background: linear-gradient(#005d00, #000d00); 
+
+}
+
+.bg_black{
+background: #000000; 
+
+}
+
+body {
+   background-color: #000;
+}
+svg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+}
+
+.path {
+  animation: draw 14s infinite;
+  animation-timing-function: linear;
+}
+
+.path-2 {
+  animation: draw 14s infinite;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes draw {
+  0% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+
+a:hover{
+	color:rgb(255, 174, 12)!important;
+} 
