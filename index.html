@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/popper.js/dist/umd/popper.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	<title>Gabriel Melo</title>
 </head>
 <body>
@@ -143,23 +147,229 @@
 	<div class="bg_black mt-5">
 		<div class="container text-center">
 	
-		<h1 class="display-3 text-light">Portifólio</h1>
+		<h1 class="display-2 text_purple">Portifólio</h1>
+		<h4 class="text-light">Alguns trabalhos</h3>
 		<br>
 	
-	<button class="btn btin-lg"> teste</button>
+		<div class="row">
+			<div class="col-4">
+				<div class="card">
+					<img src="#" class="card-img-top">
+					<div class="card-body text-left">
+						<h4 class="card-title">First job</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card">
+					<img src="#" class="card-img-top">
+					<div class="card-body text-left">
+						<h4 class="card-title">First job</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card">
+					<img src="#" class="card-img-top">
+					<div class="card-body text-left">
+						<h4 class="card-title">First job</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 	</div>
 
 	<div class="bg-light mt-5">
 		<div class="container text-center">
 		<br>
 		<br>
-		<h1 class="display-3 text-dark">Portifólio</h1>
+		<h1 class="display-2 text-dark">Habilidades</h1>
+		<br>
+		</div>
+		<div id="carouselId" class="carousel slide" data-ride="carousel">
+			<div class="container text-center">
+				<ol class="carousel-indicators">
+
+					<li class="active" data-target="#carouselId" data-slide-to="0"></li>
+					<li data-target="#carouselId" data-slide-to="1"></li>
+					<li data-target="#carouselId" data-slide-to="2"></li>
+					
+				</ol>
+
+				<div class="carousel-inner" >
+					
+					<div class="carousel-item ">
+						
+						<div class="d-none d-lg-block text-dark mt-5">
+							<h2 class="text_purple"><i>Linguagens de programação</i></h1>
+						</div>			
+
+						<br>
+						<br>			
+						<canvas id="myChart" width="400" height="100"></canvas>
+			
+					</div>
+
+					<div class="carousel-item active">
+
+						<div class="d-none d-lg-block text-dark mt-5">
+							<h2 class="text_purple"><i>Experiências extracurriculares</i></h1>
+						</div>			
+
+						<br>
+						<br>	
+						<div class="card mb-3">
+							<div class="row">
+								<div class="col-4">
+									<img class="float-left mt-4" src="img/emakers.jpg" style="height: 100px; width: auto;">	
+								</div>
+								<div class="col-4 text-left">
+									<h5 class="text-muted">Empresa Jr. do Departamento de Ciência da Computação</h5>
+									<br>
+									<p>Desenvolvimento e consultoria em <i>IoT</i> e implementação de sistemas mobile e web.</p>
+								</div>
+								<div class="col-4 text-left">
+
+									<p><b>Cargo:</b> Diretor presidente e fundador</p>
+									<p><b>Período:</b> 10 meses</p>
+									<br>
+								</div>
+							</div>
+						</div>
+						<div class="card mb-3">
+							
+							<div class="row">
+								<div class="col-4">
+									<!--<span class="text-left"><h3 class="card-title">EMakers</h4></span>-->
+									<img class=" float-left ml-3 mt-4" src="img/troia.jpeg" style="height: 90px; width: auto;">
+									
+								</div>
+
+								<div class="col-4 text-left">
+									<h5 class="text-muted">Equipe de Robótica TROIA</h5>
+									<br>
+									<p>Desenvolvimento, manutenção e programação de eletrônicas de controle aplicada em robôs autônomos e de combate</p>
+								</div>
+								<div class="col-4 text-left">
+									
+									<p><b>Cargo:</b> Ex-vice-capitão </p>
+									<p><b>Período:</b> 12 meses</p>
+									<br>
+								</div>
+							</div>
+
+						</div>
+						<div class="card">
+							<div class="row">
+								<div class="col-4">
+									<!--<span class="text-left"><h3 class="card-title">EMakers</h4></span>-->
+									<img class="float-left ml-4 mt-4" src="img/incubacoop.jpg" style="height: 90px; width: auto;">
+								</div>
+
+								<div class="col-4 text-left">
+									<h5 class="text-muted">Incubadora Tecnológica de Cooperativas Populares</h5>
+									<br>
+									Incubação e pós-incubação de cooperativas e empreendimentos populares da microrregião de Lavras
+								</div>
+								<div class="col-4 text-left">
+									<p><b>Cargo:</b> Bolsista</p>
+									<p><b>Período:</b> 12 meses</p>
+									<br>
+								</div>
+							</div>						
+
+						</div>
+
+					</div>
+
+					<!--<div class="carousel-item">
+
+						<img class="img-fluid d-block" src="img/logo_emakers.jpg">
+
+						<div class="carousel-caption d-none d-lg-block text-dark">
+							
+							<h1>Terceiro slide</h1>
+							<p class="lead"> Este é o terceiro slide do site do EMakers</p>
+
+						</div>
+
+					</div>-->
+				</div>
+
+				<a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+
+					<span class="carousel-control-prev-icon"></span>
+					<span class="sr-only">Anterior</span>
+					
+				</a>
+
+				<a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+
+					<span class="carousel-control-next-icon"></span>
+					<span class="sr-only">Próximo</span>
+					
+				</a>
+		</div>
+
+
+		
+		<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		        labels: ["Python", "HTML/CSS", "Javascript", "C++", "Java", "VBA"],
+		        datasets: [{
+		            label: 'Tempo de experiência em meses',
+		            data: [9, 6, 3, 12, 5, 4],
+		            backgroundColor: [
+		                'rgba(255, 99, 132, 0.2)',
+		                'rgba(54, 162, 235, 0.2)',
+		                'rgba(255, 206, 86, 0.2)',
+		                'rgba(75, 192, 192, 0.2)',
+		                'rgba(153, 102, 255, 0.2)',
+		                'rgba(255, 159, 64, 0.2)'
+		            ],
+		            borderColor: [
+		                'rgba(255,99,132,1)',
+		                'rgba(54, 162, 235, 1)',
+		                'rgba(255, 206, 86, 1)',
+		                'rgba(75, 192, 192, 1)',
+		                'rgba(153, 102, 255, 1)',
+		                'rgba(255, 159, 64, 1)'
+		            ],
+		            borderWidth: 1
+		        }]
+		    },
+		    options: {
+		        scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }]
+		        }
+		    }
+		});
+		</script>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div class="bg_black mt-5">
+		<br>
+		<br>
+
+		<div class="container text-center">
+	
+		<h1 class="display-3 text_purple">Objetivos</h1>
 		<br>
 	
-		<button class="btn btin-lg"> teste</button>
-		<br>
-		<br>
-		<br>
+	<button class="btn btin-lg"> teste</button>
 	</div>
 </body>
 </html>
