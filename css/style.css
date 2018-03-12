@@ -10,6 +10,7 @@
     }
 }
 
+
 .imaged{
 	position: absolute;
 	bottom:5px;
@@ -184,7 +185,7 @@ li {
   0%{
     left: -30px;
     bottom: 30px;
-    font-size: 78px;    
+    font-size: 72px;    
     
   }
 
@@ -192,7 +193,7 @@ li {
   50%{ 
     bottom: 15px;
     left: -15px;
-    font-size: 67px;
+    font-size: 64px;
   }
 
   100%{
@@ -202,7 +203,7 @@ li {
   }
 }
 .nav_btn:hover{
-  font-size:48px;
+  font-size:56px;
   position:relative;
   animation: 6s animation-nav-button 1 linear; 
 }
@@ -211,24 +212,44 @@ li {
   0%{
     bottom: 0px;
     left: 0px;
-    font-size: 62px;
+    font-size: 56px;
   }
 
   3%{ 
     bottom: 15px;
     left: -15px;
-    font-size: 70px;
+    font-size: 64px;
   }
 
   6%{
     left: -30px;
     bottom: 30px;
-    font-size: 78px;
+    font-size: 72px;
 
   }
   100%{
     left: -30px;
     bottom: 30px;
-    font-size: 78px;    
+    font-size: 72px;    
+  }
+}
+
+.nav_link_lg{
+  height: 120px;
+}
+
+.me{
+  animation: 3s animation-me 1;
+}
+
+@keyframes animation-me {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
   }
 }
