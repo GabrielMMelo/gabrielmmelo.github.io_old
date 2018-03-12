@@ -11,7 +11,15 @@
 	<title>Gabriel Melo</title>
 </head>
 <body>
-	<div class="bg_black d-block" style="padding-bottom: 210px;">
+	<script>
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip(); 
+		});
+	</script>
+
+	
+	<div class="bg_black " style="padding-bottom: 210px;">
+
 		<svg width="100%" height="60%" viewBox="200 0 400 250"  >
 		  <g id="paths" class="path" stroke="#5D005D" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-opacity="1" stroke-dasharray="30,150" stroke-dashoffset="2000">
 		    <g id="left" transform="translate(251.000000, 4.000000)">
@@ -95,6 +103,7 @@
 	</div>
 	<nav class="navbar navbar-expand bg-dark navbar-dark">
 
+	</div>
 	<div class="container justify-content-center">
 		<div class=" bg_black">
 			<br>
@@ -112,27 +121,27 @@
 	<nav class="navbar navbar-expand bg-dark navbar-dark">
 		<div class="container justify-content-ce display-4">
 			<div class="row">
-				<div class="col-lg-3 col-sm-12 text-sm-center my-3">
+				<div class="col-lg-3 col-sm-12 text-sm-center my-3 nav_btn">
 					
 					<a href="#biografia" class="nav-link  text-light ">Biografia</a>
 					
 				</div>
 
-				<div class="col-lg-3 col-sm-12 text-sm-center my-3">
+				<div class="col-lg-3 col-sm-12 text-sm-center my-3 nav_btn">
 					
 					<a href="#portifolio" class="nav-link  text-light">Portifólio</a>
 					
 				</div>
 
-				<div class="col-lg-3  col-sm-12 text-sm-center my-3">
+				<div class="col-lg-3  col-sm-12 text-sm-center my-3 nav_btn">
 					
 					<a href="#experiencias" class="nav-link text-light">Experiências</a>
 					
 				</div>
 
-				<div class="col-lg-3  col-sm-12 text-sm-center my-3">
+				<div class="col-lg-3  col-sm-12 text-sm-center my-3 nav_btn">
 					
-					<a href="#objetivos" class="nav-link text-light ml-5">Objetivos</a>
+					<a href="#objetivos" class="nav-link text-light ml-lg-5 ml-md- ml-sm-0">Objetivos</a>
 					
 				</div>
 
@@ -164,7 +173,7 @@
 
 			<p align="justify" class="lead mt-5">Belo-horizontino, Gabriel busca, antes de qualquer coisa, enxergar os infinitos lados bons da vida, não esquecendo de respeitar a diversidade e completude do outro. Quando criança, sonhava em se tornar o agente de alguma inteligencia nacional que salva o dia digitando <span class="tachado"><i> aleatoriamente</i></span> códigos em um computador improvisado.</p>
 
-			<p  align="justify" class="lead">Iniciou sua vida acadêmica em 2014, ao ingressar no curso de Licenciatura em Filosofia (?) pela UFLA. Como um típico estudante advindo do ensino médio brasileiro, não fazia ideia do que "fazer da vida" apesar de o querer, muito. Desde então passou por Administração Pública, Engenharia Mecânica e Engenharia de Controle e Automação, até chegar em seu real - e esquecido - sonho: a Ciência da Computação. <strong>Machine Learning</strong>, <strong>Data Science</strong>, <strong>Eletrônica Digital</strong> e <strong>Desenvolvimento Web</strong> fazem dúvida, desta vez menos preocupante, sobre sua área de atuação. De forma mais recente, Melo tenta se aventurar no empreendedorismo e inovação tecnológica.</p>	
+			<p  align="justify" class="lead">Iniciou sua vida acadêmica em 2014, ao ingressar no curso de Licenciatura em Filosofia (?) pela UFLA. Como um típico estudante advindo do ensino médio brasileiro, não fazia ideia do que "fazer da vida" apesar de o querer, muito. Desde então passou por Administração Pública, Engenharia Mecânica e Engenharia de Controle e Automação, até chegar em seu real - e esquecido - sonho: a Ciência da Computação. <strong><span data-toggle="tooltip" data-placement="top" title="Subcampo da Ciência da Computação que explora o estudo e construção de algoritmos que podem aprender de seus erros e fazer previsões sobre dados">Machine Learning</span></strong>, <strong>Data Science</strong>, <strong>Eletrônica Digital</strong> e <strong>Desenvolvimento Web</strong> fazem dúvida, desta vez menos preocupante, sobre sua área de atuação. De forma mais recente, Melo tenta se aventurar no empreendedorismo e inovação tecnológica.</p>	
 
 
 			<p  align="justify" class="lead">Dentre seus hobbies estão <strong>personal projects em <i> IoT </i></strong>, <strong>futebol</strong>, <i><strong>Dark Souls</strong></i> e, claro, um <strong>Netflix</strong> (<i>Game of Thrones</i> também é bem quisto).</p>	
@@ -250,12 +259,17 @@
 	</div>
 
 
-	<div class="bg-light mt-5">
+	<div class="bg-light mt-5"> 
+		<div class="code text-left">
+				
+			</div>
 		<div class="container text-center"  >
 		<br>
 		<br>
 		<h1 class="display-2 text-dark" id="experiencias">Experiências</h1>
+			
 		</div>
+
 		<div id="carouselId" class="carousel slide" data-ride="carousel">
 			<div class="container text-center">
 				<ol class="carousel-indicators">
@@ -269,8 +283,6 @@
 				<div class="carousel-inner" >
 					
 					<div class="carousel-item mb-5 active">
-						
-						
 
 						<br>			
 						<canvas id="myChart" width="400" height="184"></canvas>
@@ -279,21 +291,18 @@
 
 					<div class="carousel-item  mb-5">
 
-							
-
-					
 						<br>	
 						<div class="card mb-3">
 							<div class="row">
-								<div class="col-4">
-									<img class="float-left ml-4 mt-4" src="img/emakers.jpg" style="height: 100px; width: auto;">	
+								<div class="col-lg-4 float-left  col-md-6 col-sm-12">
+									<img class=" ml-4 mt-4" src="img/emakers.jpg" style="height: 100px; width: auto;">	
 								</div>
-								<div class="col-4 text-left mt-2">
-									<h5 class="text-muted">Empresa Jr. do Departamento de Ciência da Computação</h5>
+								<div class="col-lg-4 col-md-6 col-sm-12 text-left text-sm-center mt-2">
+									<h5 class="text-muted mt-sm-3">Empresa Jr. do Departamento de Ciência da Computação</h5>
 									<br>
-									<p>Desenvolvimento e consultoria em <i>IoT</i> e implementação de sistemas mobile e web.</p>
+									<p class="text-left mx-4">Desenvolvimento e consultoria em <i>IoT</i> e implementação de sistemas mobile e web.</p>
 								</div>
-								<div class="col-4 text-left mt-2">
+								<div class="col-lg-4 col-md-12 col-sm-12 text-lg-left text-sm-center mt-2">
 
 									<p><b>Cargo:</b> Diretor presidente e fundador</p>
 									<p><b>Período:</b> 10 meses</p>
@@ -301,21 +310,22 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="card mb-3">
 							
 							<div class="row">
-								<div class="col-4">
+								<div class="col-lg-4 float-left  col-md-6 col-sm-12">
 									<!--<span class="text-left"><h3 class="card-title">EMakers</h4></span>-->
-									<img class=" float-left ml-5 mt-4" src="img/troia.jpeg" style="height: 90px; width: auto;">
+									<img class="ml-lg-5 ml-sm-0 mt-4" src="img/troia.jpeg" style="height: 90px; width: auto;">
 									
 								</div>
 
-								<div class="col-4 text-left mt-2">
-									<h5 class="text-muted">Equipe de Robótica TROIA</h5>
+								<div class="col-lg-4 col-md-6 col-sm-12 text-left text-sm-center mt-2">
+									<h5 class="text-muted mt-sm-3">Equipe de Robótica TROIA</h5>
 									<br>
-									<p>Desenvolvimento, manutenção e programação de eletrônicas de controle aplicada em robôs autônomos e de combate</p>
+									<p class="text-left mx-4">Desenvolvimento, manutenção e programação de eletrônicas de controle aplicada em robôs autônomos e de combate</p>
 								</div>
-								<div class="col-4 text-left mt-2">
+								<div class="col-lg-4 col-md-12 col-sm-12 text-lg-left text-sm-center mt-2">
 									
 									<p><b>Cargo:</b> Ex-vice-capitão </p>
 									<p><b>Período:</b> 12 meses</p>
@@ -326,17 +336,17 @@
 						</div>
 						<div class="card">
 							<div class="row">
-								<div class="col-4">
+								<div class="col-lg-4 float-left  col-md-6 col-sm-12">
 									<!--<span class="text-left"><h3 class="card-title">EMakers</h4></span>-->
-									<img class="float-left ml-5 mt-4" src="img/incubacoop.jpg" style="height: 90px; width: auto;">
+									<img class="ml-lg-5 ml-sm-0 mt-4" src="img/incubacoop.jpg" style="height: 90px; width: auto;">
 								</div>
 
-								<div class="col-4 text-left mb-2">
-									<h5 class="text-muted mt-2">Incubadora Tecnológica de Cooperativas Populares</h5>
+								<div class="col-lg-4 col-md-6 col-sm-12 text-left text-sm-center mb-2">
+									<h5 class="text-muted  mt-sm-3">Incubadora Tecnológica de Cooperativas Populares</h5>
 									<br>
-									Incubação e pós-incubação de cooperativas e empreendimentos populares da microrregião de Lavras
+									<p class="text-left mx-4">Incubação e pós-incubação de cooperativas e empreendimentos populares da microrregião de Lavras</p>
 								</div>
-								<div class="col-4 text-left mt-2">
+								<div class="col-lg-4 col-md-12 col-sm-12 text-lg-left text-sm-center mt-2">
 									<p><b>Cargo:</b> Bolsista</p>
 									<p><b>Período:</b> 12 meses</p>
 									<br>
@@ -528,9 +538,9 @@
 
 				</div>	
 
-				<div class="col-4">
+				<div class="col-4 text-light">
 					
-					https://www.linkedin.com/in/gabriel-melo-943691159/
+					<a href="https://www.linkedin.com/in/gabriel-melo-943691159/"> <img style="height: 100px;" src="img/linkedin.svg"> </a>
 
 				</div>	
 

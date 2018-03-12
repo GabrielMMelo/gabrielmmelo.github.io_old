@@ -27,8 +27,9 @@ background: #000000;
 }
 
 /* Style circuit svg */
+
 body {
-   background-color: #000;
+  background-color: black;
 }
 svg {
   position: absolute;
@@ -153,4 +154,81 @@ li {
     background-image:none;
     background-repeat:none;
     background-position:0; 
+}
+
+.code{
+  position: relative;
+  font-size: 16px;
+  opacity: 0;
+  animation: 5s animation-code infinite reverse;
+}
+
+@keyframes animation-code {
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity:0;
+  }
+}
+
+.nav_btn {
+  animation: 0.3s animation-rev-nav-button 1 linear; 
+}
+@keyframes animation-rev-nav-button {
+  0%{
+    left: -30px;
+    bottom: 30px;
+    font-size: 78px;    
+    
+  }
+
+
+  50%{ 
+    bottom: 15px;
+    left: -15px;
+    font-size: 67px;
+  }
+
+  100%{
+    bottom: 0px;
+    left: 0px;
+    font-size: 56px;
+  }
+}
+.nav_btn:hover{
+  font-size:48px;
+  position:relative;
+  animation: 6s animation-nav-button 1 linear; 
+}
+
+@keyframes animation-nav-button {
+  0%{
+    bottom: 0px;
+    left: 0px;
+    font-size: 62px;
+  }
+
+  3%{ 
+    bottom: 15px;
+    left: -15px;
+    font-size: 70px;
+  }
+
+  6%{
+    left: -30px;
+    bottom: 30px;
+    font-size: 78px;
+
+  }
+  100%{
+    left: -30px;
+    bottom: 30px;
+    font-size: 78px;    
+  }
 }
